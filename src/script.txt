@@ -1,0 +1,38 @@
+Hi I'm Mason I'm gonna talk about useSound!
+
+Just want to introduce myself a bit before I get into useSound. 
+
+Last year I was trying to make a living as a professional musician, I went to school to study music and spent most of my free time making music and working creatively with audio. 
+
+I learned about generative music, which is essentially writing rules and procedures to determine things like pitch and rhythm, and I started making my own generative music in Ableton Live. Some musicians write scripts in audio workstations to make these rules, I was just using some stock Ableton effects. 
+
+When I realized that I was basically programming a computer to make music, I started exploring other ways I could creatively program computers, and... now I'm here. 
+
+So I've always paid attention to sound design and sound effects, and the way environmental sound affects people, so I love adding sound to my projects that I develop.
+
+---
+
+useSound is a custom React Hook developed by Josh Comeau. I'm gonna assume that you guys know about custom hooks...
+
+Josh says "I defer most of the hard audio work to Howler", which is a really powerful library of JavaScript audio tools.
+
+From my understanding of the documentation, Josh used Typescript and the Hooks API to use a lot of the features in Howler in React apps.
+
+You can also use HTMLAudioElement to play audio in websites and apps, but useSound has some cool built-in functionality that allows you to use audio more creatively. I'll talk about that in a bit.
+
+---
+
+Add the useSound package to your directory by running "npm install use-sound" or "yard add use-sound"
+
+You'll need to import the hook and an audio asset into whatever file you'd like to use.
+
+You can import any type of audio file you'd like (.wav, .mp3. .aiff, etc.) but MP3 files have the best browser support and can usually be compressed to smaller file sizes than WAVs and AIFFs.
+
+The useSound hook takes two arguments: a URL to the sound you'd like to use, and an optional argument to access some extended options. With these arguments, it produces an array with two values: A function you can call to start the sound, and an optional object with more data and controls.
+
+Once you've imported the hook and your audio files, you can define your audio asset as a variable with any name you'd like and add the audio file inside the useSound hook. Then you can access the variable you just defined and use it with event handlers, call it inside functions, pass it down to other components as a prop, and more.
+
+I have a few examples of onClick events (iceHonky horns, FS page changes and login)
+
+---
+
