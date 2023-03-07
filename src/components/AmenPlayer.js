@@ -23,17 +23,20 @@ function AmenPlayer() {
     return (
         <div id="AmenPlayer">
             <div>
-                <img src={AmenCode} alt="code for this component" id="AmenCode" />
+                <img className="code" src={AmenCode} alt="code for this component" id="AmenCode" />
             </div>
-            
+
             <div id="AmenRight">
-                <h2>In the second element of the array, you can use "stop" or "pause" functions to stop the audio.</h2>
-                <p>Amen Break - from "Amen, Brother" by the Winstons</p>
+                <div className="border">
+                    <h2>In the second element of the array, you can use "stop" or "pause" functions to stop the audio.</h2>
+                    <p>click the record to start & pause the music:</p>
+                    <p>Amen Break - from "Amen, Brother" by the Winstons</p>
+                </div>
                 <div id="VinylIcon">
-                <a onClick={isPlaying ? handlePause : handlePlay}>
-                    <VinylIcon />
-                </a>
-            </div>
+                    <a onClick={isPlaying ? handlePause : handlePlay}>
+                        <VinylIcon />
+                    </a>
+                </div>
             </div>
         </div>
 

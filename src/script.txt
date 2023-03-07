@@ -32,7 +32,25 @@ The useSound hook takes two arguments: a URL to the sound you'd like to use, and
 
 Once you've imported the hook and your audio files, you can define your audio asset as a variable with any name you'd like and add the audio file inside the useSound hook. Then you can access the variable you just defined and use it with event handlers, call it inside functions, pass it down to other components as a prop, and more.
 
-I have a few examples of onClick events (iceHonky horns, FS page changes and login)
+---
+
+I have a few examples of simple uses in some personal projects I've made.
+
+In this example, [soundHorn] is a variable which plays a goal horn we've passed down as a prop - then that variable is accessed inside an onClick event handler to play the goal horn.
+
+In my sumo website, sound variables are defined on the App level, then passed down as props to various components that use them. When a user submits a team they drafted, tachiai() plays the [tachiai] sound.
+
+In the second element of the array, you can use "stop" or "pause" functions to stop the audio. I made a simple audio player to play the Amen Break, from "Amen, Brother" by the Winstons.
 
 ---
+
+Like I mentioned before, you can use HTMLAudioElements to play audio and use a bunch of properties and methods inherited from HTMLMediaElements. But I prefer useSound's simpler syntax, and their documentation explains all of its capabilities in a much clearer way. If you're not using React, you can still use Howler to do a lot of the same things.
+
+One thing I love about useSound that HTMLAudioElements can't handle is the ability to use "sprites." A sprite is a single audio file which contains multiple samples - instead of loading multiple audio files and making multiple parallel network requests, you can isolate sections of one audio file and define each section as a unique sample.
+
+I imported one audio file as "allDrums", then called useSound with allDrums as the file to use and a map of sprites. Each sprite, or key / value pair in the map, needs a starting time and length of the sample in milliseconds. Then I paired individual keyboard keys to unique keys or ids in the sprite map, to use different samples in one audio file.
+
+
+
+
 

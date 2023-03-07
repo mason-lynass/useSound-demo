@@ -12,6 +12,8 @@ import RackTom from "../sounds/rack-tom.wav"
 import Ride from "../sounds/ride.wav"
 import Snare from "../sounds/snare.wav"
 
+import allDrums from "../sounds/useSound-drums.mp3"
+
 function DrumMachine() {
 
     const [crash] = useSound(Crash)
@@ -23,29 +25,42 @@ function DrumMachine() {
     const [ft] = useSound(FloorTom)
     const [rt] = useSound(RackTom)
 
+    const [alldrums] = useSound(allDrums, {
+        sprite: {
+            kick: [0, 200],
+            snare: [250, 150],
+            clap: [445, 150],
+            rt: [650, 500],
+            ft: [1200, 500],
+            crash: [1750, 1500],
+            ride: [3500, 1050],
+            hihat: [4600, 150],
+        }
+    })
+
     useKeypress(["1", "2", "3", "4", ";", "q", "w", "e", "r"], (e) => {
         if (e.key === "1") {
-            clap()
+            alldrums({id: 'clap'})
         } else if (e.key === "2") {
-            rt()
+            alldrums({id: 'rt'})
         } else if (e.key === "3") {
-            ft()
+            alldrums({id: 'ft'})
         } else if (e.key === "4") {
-            hihat()
+            alldrums({id: 'hihat'})
         } else if (e.key === "q") {
-            kick()
+            alldrums({id: 'kick'})
         } else if (e.key === "w") {
-            snare()
+            alldrums({id: 'snare'})
         } else if (e.key === "e") {
-            ride()
+            alldrums({id: 'ride'})
         } else if (e.key === "r") {
-            crash()
+            alldrums({id: 'crash'})
         }
     })
 
 
     return (
-        <div>
+        <div id="DrumMachine">
             <h1>8 voice Drum Machine</h1>
             <h2>click on the buttons to hear each sound</h2>
             <h3>then use "1, 2, 3, 4, q, w, e, & r" keys on the keyboard to finger drum!</h3>
@@ -71,7 +86,6 @@ function DrumMachine() {
                 <h2>ride</h2>
                 <h2>crash</h2>
             </div>
-
         </div>
     )
 }

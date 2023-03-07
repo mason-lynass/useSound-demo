@@ -5,7 +5,7 @@ function Intro () {
 
     return (
         <div id="intro">
-            <h2>a little bit about me...</h2>
+            <a id="aboutMe" href="https://www.masonlynass.com/about">a little bit about me...</a>
             <div id="aboutMeFlex">
                 
                 <img id="meOutside" src={meOutside} alt="me playing music on the computer"/>

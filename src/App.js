@@ -11,18 +11,23 @@ import Basics from "./components/Basics.js"
 import AmenPlayer from "./components/AmenPlayer.js"
 import DrumMachine from "./components/DrumMachine.js"
 import RandomNotes from "./components/RandomNotes.js"
+import Sprites from "./components/Sprites";
 
 function App() {
 
   return (
     <div className="App">
-      <Title />
-      <Intro />
-      <UseSoundAbout />
+      <section id="sTitle"><Title /></section>
+      <section><Intro /></section>
+      <section className="sUSA"><UseSoundAbout /></section>
       <Basics />
-      <AmenPlayer />
-      <DrumMachine />
-      <RandomNotes />
+      <section id="AP"><AmenPlayer /></section>
+      <section id="DMFlex">
+        <Sprites />
+        <DrumMachine />
+      </section>
+      <section id="RandomNotes"><RandomNotes /></section>
+      
     </div>
 
   );

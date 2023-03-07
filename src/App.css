@@ -1,6 +1,29 @@
 .App {
   text-align: center;
   font-family: "Montserrat";
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.border {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.code {
+  border: 2px solid goldenrod;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+
 }
 
 html {
@@ -12,19 +35,29 @@ body {
   margin: 0;
 }
 
-#title {
+#sTitle {
   background-color: rgb(36, 58, 49);
+}
+
+#title {
   color: antiquewhite;
-  margin: 0;
-  padding: 100px;
+  margin: auto;
+  padding: 20px;
 }
 
 #title h1 {
-  font-size: 60px;
+  font-size: 150px;
 }
 
 #title h3 {
-  font-size: 30px;
+  font-size: 48px;
+}
+
+#aboutMe {
+  color: rgb(36, 58, 49);
+  padding: 20px;
+  text-decoration: none;
+  font-size: 40px;
 }
 
 #aboutMeFlex {
@@ -35,7 +68,7 @@ body {
   height: 300px;
   position: absolute;
   top: 30%;
-  left: 10px;
+  left: 20px;
   z-index: 2;
   border: 2px solid goldenrod;
 }
@@ -52,14 +85,24 @@ body {
 
 #ableton {
   width: 100%;
+  max-width: 1400px;
+  padding: 20px;
 }
 
-#intro {
+/* #intro {
   margin: 30px 0 50px 0; 
+} */
+
+#useSoundAbout h2 {
+  font-size: 40px;
 }
 
-#useSoundAbout {
-  margin: 100px 0;
+#useSoundAbout a {
+  color: rgb(36, 58, 49)
+}
+
+#sUSA {
+  height: 100vh;
 }
 
 #USAFlex {
@@ -67,6 +110,7 @@ body {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
+  gap: 100px;
 }
 
 #JoshComeau {
@@ -77,19 +121,45 @@ body {
   width: 500px;
 }
 
+#documentation {
+  border: 1px solid black;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  width: 800px;
+  margin: 20px auto;
+  padding: 0 0 20px 0;
+}
+
+#docLinks {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+#docLinks a {
+  font-size: 30px;
+}
+
 #BasicsFlex {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  gap: 20px;
+  gap: 100px;
   margin-bottom: 100px;
 }
 
-#BasicsFlex h3, #BasicsFlex img {
-  margin: 5px;
+#BasicsFlex h3 {
+  font-size: 30px;
 }
 
-#imports, #variables {
+#BasicsFlex h3,
+#BasicsFlex img {
+  margin: 10px;
+}
+
+#imports,
+#variables {
   height: 350px;
   margin: 20px;
 }
@@ -99,7 +169,7 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 100px;
   margin-bottom: 100px;
 }
 
@@ -107,7 +177,10 @@ body {
   width: 700px;
 }
 
-#FS1, #FS2, #FS3, #IceHonky {
+#FS1,
+#FS2,
+#FS3,
+#IceHonky {
   width: 700px;
 }
 
@@ -116,12 +189,23 @@ body {
   margin: 20px auto;
 }
 
+#checkitout {
+  width: 600px;
+  margin: auto;
+}
+
+#AP {
+  background-image: url('./images/m4aod-album-art-dark.jpg');
+}
+
 #AmenPlayer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   margin: 150px auto;
+  gap: 100px;
+
 }
 
 #AmenCode {
@@ -135,4 +219,124 @@ body {
 #VinylIcon {
   width: 700px;
   margin: 0 auto;
+}
+
+#DMFlex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 250px auto;
+
+}
+
+#sprites {
+  width: 760px;
+}
+
+#DrumSprites {
+  width: 700px;
+}
+
+#DrumMachine {
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  margin: 5px auto;
+}
+
+#DMTitles,
+#DMButtons {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 500px;
+  margin: 0 auto;
+}
+
+#DrumMachine button {
+  background-color: rgb(36, 58, 49);
+  color: whitesmoke;
+  border-radius: 10px;
+}
+
+#DMTitles h2 {
+  font-size: 20px;
+}
+
+#RandomNotes {
+  background-image: url('./images/m4aod-album-art-light.png');
+}
+
+#RNTitle {
+  font-size: 60px;
+  width: 750px;
+  margin: auto;
+}
+
+#RandomTopFlex,
+#RandomBottomFlex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 20px auto;
+}
+
+#RandomTopFlex {
+  align-items: top;
+}
+
+#RandomBottomFlex {
+  align-items: center;
+}
+
+#RandomExtraFlex {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+
+#RandomSprites {
+  width: 350px;
+}
+
+#RandomVariables {
+  height: 150px;
+}
+
+#RandomFunctions {
+  width: 500px;
+}
+
+#RandomTiming {
+  width: 500px;
+}
+
+#RandomPlayStop {
+  width: 250px;
+}
+
+#RandomNoteGenerator {
+  border: 3px solid goldenrod;
+  padding: 20px;
+  background-color: antiquewhite;
+  margin: 0 50px;
+}
+
+#RandomNoteGenerator button {
+  height: 140px;
+  width: 200px;
+  margin: 5px;
+  font-size: 40px;
+  background-color: rgb(36, 58, 49);
+  color: antiquewhite;
+  border-radius: 20px;
 }
