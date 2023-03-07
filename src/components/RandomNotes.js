@@ -129,7 +129,14 @@ function RandomNotes() {
 
   return (
     <div>
-      <h1 id="RNTitle" className="border">Random note generator</h1>
+      <div id="RNTitle" className="border">
+        <h1>Random note generator</h1>
+        <div id="RandomNoteGenerator">
+          <button onClick={arpeggiator}>START</button>
+          <button onClick={stop}>STOP</button>
+        </div>
+      </div>
+
       <div>
         <h2 className="border">When calling useSound, you can pass options like "playbackRate," "volume," "interrupt," and "sprite" as a second argument:</h2>
         <div id="RandomTopFlex">
@@ -141,10 +148,7 @@ function RandomNotes() {
             <img className="code" src={RandomFunctions} alt="sprites code" id="RandomFunctions"></img>
             <img className="code" src={RandomTiming} alt="sprites code" id="RandomTiming"></img>
           </div>
-          <div id="RandomNoteGenerator">
-            <button onClick={arpeggiator}>START</button>
-            <button onClick={stop}>STOP</button>
-          </div>
+
           <img className="code" src={RandomPlayStop} alt="sprites code" id="RandomPlayStop"></img>
         </div>
       </div>

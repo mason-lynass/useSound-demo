@@ -276,9 +276,14 @@ body {
 }
 
 #RNTitle {
-  font-size: 60px;
-  width: 750px;
-  margin: auto;
+  font-size: 50px;
+  width: 650px;
+  margin: 0 auto;
+}
+
+#RNTitle h1 {
+  margin: 0;
+  font-size: 50px;
 }
 
 #RandomTopFlex,
@@ -287,7 +292,7 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   gap: 50px;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 #RandomTopFlex {
@@ -300,7 +305,7 @@ body {
 
 #RandomExtraFlex {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   gap: 20px;
 }
 
@@ -325,17 +330,16 @@ body {
 }
 
 #RandomNoteGenerator {
-  border: 3px solid goldenrod;
-  padding: 20px;
-  background-color: antiquewhite;
-  margin: 0 50px;
+  padding: 10px;
+  margin: 10px auto;
+  width: 230px;
 }
 
 #RandomNoteGenerator button {
-  height: 140px;
-  width: 200px;
+  height: 60px;
+  width: 100px;
   margin: 5px;
-  font-size: 40px;
+  font-size: 20px;
   background-color: rgb(36, 58, 49);
   color: antiquewhite;
   border-radius: 20px;
