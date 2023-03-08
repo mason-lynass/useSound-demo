@@ -22,7 +22,7 @@ You can also use HTMLAudioElement to play audio in websites and apps, but useSou
 
 ---
 
-Add the useSound package to your directory by running "npm install use-sound" or "yard add use-sound"
+Add the useSound package to your directory by running "npm install use-sound" or "yarn add use-sound"
 
 You'll need to import the hook and an audio asset into whatever file you'd like to use.
 
@@ -40,7 +40,7 @@ In this example, [soundHorn] is a variable which plays a goal horn we've passed 
 
 In my sumo website, sound variables are defined on the App level, then passed down as props to various components that use them. When a user submits a team they drafted, tachiai() plays the [tachiai] sound.
 
-In the second element of the array, you can use "stop" or "pause" functions to stop the audio. I made a simple audio player to play the Amen Break, from "Amen, Brother" by the Winstons.
+In the second element of the variable destructured array, you can use "stop" or "pause" functions to stop the audio. I made a simple audio player to play the Amen Break, from "Amen, Brother" by the Winstons.
 
 ---
 
