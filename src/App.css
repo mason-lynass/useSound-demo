@@ -53,16 +53,34 @@ body {
   font-size: 40px;
 }
 
+#title a {
+  color: antiquewhite;
+}
+
 #aboutMe {
   color: rgb(36, 58, 49);
   padding: 20px;
-  text-decoration: none;
   font-size: 40px;
 }
 
 #aboutMeFlex {
   position: relative
 }
+
+#moreAboutMe {
+  width: 520px;
+  font-size: 20px;
+}
+
+#moreAboutFlex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
 
 #meOutside {
   height: 300px;

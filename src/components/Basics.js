@@ -33,7 +33,7 @@ function Basics() {
                             <img className="code" src={FS3} alt="FS code bit" id="FS3" />
                         </div>
                     </div>
-                    <h3 id="checkitout" className="border">check it out for yourself at icehonky.net & fantasysumo.net</h3>
+                    <h3 id="checkitout" className="border">check it out for yourself at <a href="https://www.icehonky.net">icehonky.net</a> & <a href="https://www.fantasysumo.net">fantasysumo.net</a></h3>
                 </div>
             </section>
         </div>
