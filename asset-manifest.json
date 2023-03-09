@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/useSound-demo/static/css/main.a04ddc76.css",
-    "main.js": "/useSound-demo/static/js/main.2c57ab6d.js",
+    "main.css": "/useSound-demo/static/css/main.81c574b0.css",
+    "main.js": "/useSound-demo/static/js/main.1546d266.js",
     "static/js/845.2bec1975.chunk.js": "/useSound-demo/static/js/845.2bec1975.chunk.js",
     "static/js/787.8a103808.chunk.js": "/useSound-demo/static/js/787.8a103808.chunk.js",
     "static/media/m4aod-album-art-light.png": "/useSound-demo/static/media/m4aod-album-art-light.301276590263287a816a.png",
@@ -35,13 +35,13 @@
     "static/media/FS-2.png": "/useSound-demo/static/media/FS-2.bdff41c4a7abddf9e6b2.png",
     "static/media/FS-1.png": "/useSound-demo/static/media/FS-1.f6636ef3a134451430f7.png",
     "index.html": "/useSound-demo/index.html",
-    "main.a04ddc76.css.map": "/useSound-demo/static/css/main.a04ddc76.css.map",
-    "main.2c57ab6d.js.map": "/useSound-demo/static/js/main.2c57ab6d.js.map",
+    "main.81c574b0.css.map": "/useSound-demo/static/css/main.81c574b0.css.map",
+    "main.1546d266.js.map": "/useSound-demo/static/js/main.1546d266.js.map",
     "845.2bec1975.chunk.js.map": "/useSound-demo/static/js/845.2bec1975.chunk.js.map",
     "787.8a103808.chunk.js.map": "/useSound-demo/static/js/787.8a103808.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a04ddc76.css",
-    "static/js/main.2c57ab6d.js"
+    "static/css/main.81c574b0.css",
+    "static/js/main.1546d266.js"
   ]
 }
