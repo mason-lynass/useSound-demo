@@ -13,12 +13,16 @@ Links to useSound, Howler, and HTMLAudioElement documentation are in the "Basics
 ## About Mason:
 
 website - [https://www.masonlynass.com](https://www.masonlynass.com)
+
 music - [https://masonlynass.bandcamp.com](https://masonlynass.bandcamp.com)
+
 LinkedIn - [https://www.linkedin.com/in/mason-lynass](https://www.linkedin.com/in/mason-lynass)
 
 ## About Generative Music
 
 [Generative Music Wikipedia](https://en.wikipedia.org/wiki/Generative_music)
+
 [Brian Eno talks about making generative music in Logic](https://youtu.be/cv7epY75Wa0?t=525)
+
 [an intro to generative music](https://medium.com/@alexbainter/introduction-to-generative-music-91e00e4dba11)
 
